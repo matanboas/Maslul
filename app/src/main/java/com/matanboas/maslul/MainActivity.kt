@@ -5,12 +5,15 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.LayoutDirection
+import androidx.compose.ui.platform.LocalLayoutDirection
+import androidx.navigation.NavType
+import androidx.navigation.compose.*
+import androidx.navigation.navArgument
 import com.matanboas.maslul.ui.theme.MaslulTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,12 +21,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MaslulTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+            CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
+                MaslulTheme {
+                    AppNavHost()
                 }
             }
         }
@@ -31,17 +31,35 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+fun AppNavHost() {
+    val navController = rememberNavController()
+    NavHost(navController = navController, startDestination = "home") {
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MaslulTheme {
-        Greeting("Android")
+        composable("home") {
+            HomeScreen(
+                onNavigateToRoutes = { navController.navigate("routes_list") },
+                onNavigateToMap = { navController.navigate("map_view") }
+            )
+        }
+
+        composable("routes_list") {
+            RoutesListScreen(
+                onRouteClick = { routeId -> navController.navigate("route_detail/$routeId") }
+            )
+        }
+
+        composable("map_view") {
+            MapViewScreen(
+                onRouteSelected = { routeId -> navController.navigate("route_detail/$routeId") }
+            )
+        }
+
+        composable(
+            route = "route_detail/{routeId}",
+            arguments = listOf(navArgument("routeId") { type = NavType.StringType })
+        ) { backStackEntry ->
+            val routeId = backStackEntry.arguments?.getString("routeId") ?: ""
+            RouteDetailScreen(routeId)
+        }
     }
 }

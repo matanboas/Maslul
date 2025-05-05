@@ -33,8 +33,6 @@ Maslul/
 ├── data/           # Data sources and repository implementations
 ├── domain/         # Business logic and use cases
 ├── ui/             # Composable screens and UI components
-├── theme/          # Design system and theming
-├── assets/         # Images and logo assets
 └── README.md
 ```
 
@@ -98,15 +96,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-*Made with ❤️ by [Your Name](https://github.com/yourusername)*
-
----
-
-## 📝 Next Steps
-
-- **Logo Placeholder**: Replace `./assets/logo.png` with the actual logo image once it's ready.
-- **Screenshots**: Add images or GIFs showcasing the app's UI and features to the "Screenshots" section.
-- **Social Links**: Update the social media links with your actual profiles to keep users engaged with your development journey.
-- **License**: Ensure the `LICENSE` file is present in your repository to reflect the chosen license.
-
-By maintaining this `README.md`, you provide clear guidance to users and contributors, enhancing the accessibility and professionalism of your project.
+*Made with ❤️ by [Matan Boas](https://github.com/matanboas)*

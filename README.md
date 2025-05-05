@@ -6,13 +6,32 @@
 
 ---
 
-## 📱 Features
+## 📄 App Specification
 
-- **Explore Trails**: Browse curated hiking routes filtered by difficulty, length, and region.
-- **Interactive Map**: Navigate trails with real-time GPS tracking.
-- **Weather & Safety Alerts**: Stay informed with live weather updates and trail advisories.
-- **Community Insights**: Share tips, photos, and rate your favorite hikes.
-- **Achievements**: Earn badges and track your hiking milestones.
+Maslul is a mobile hiking companion app focused on trails in Israel. It aims to:
+
+- Help users discover hikes based on difficulty, length, and region
+- Provide navigation through interactive maps
+- Enable real-time GPS tracking of user location
+- Foster a community with comments and tips
+- Ensure safety with weather and trail alerts
+
+### Platform
+- **Target**: Android
+- **Core Technologies**: Jetpack Compose, Firebase (Authentication, Firestore, Storage), Google Maps SDK (with plans for MapLibre for offline support)
+
+---
+
+## 📱 MVP Features
+
+The initial version of Maslul will include these core functionalities:
+
+- 🗺 **Suggested Hiking Routes**: Browse a list of trails with details like difficulty and location
+- 📍 **Interactive Map View**: Visualize each trail on a map
+- 🧭 **Real-time GPS Tracking**: Track your position on the trail
+- 💬 **Comments & Tips**: Share and view community insights per trail
+- 🔔 **Safety & Weather Alerts**: Receive live updates on conditions
+- ⭐ **User Ratings**: Rate and review trails
 
 ---
 
@@ -27,6 +46,8 @@
 ---
 
 ## 🛠️ Project Structure
+
+The project follows a clean architecture layout to ensure scalability and maintainability:
 
 ```
 Maslul/
@@ -55,6 +76,20 @@ Maslul/
 
 ---
 
+## 📅 Development Roadmap
+
+### Day 1: Project Setup & Planning (Completed)
+- Set up an Android Studio project with Jetpack Compose (Empty Activity)
+- Initialized Git and GitHub repository
+- Defined clean architecture structure (`data/`, `domain/`, `ui/`)
+- Outlined MVP features (see above)
+- Drafted a brief app specification (see above)
+- Marketing: Posted an intro on Twitter/LinkedIn with #AndroidDev #HikingApp
+
+*Next steps: UI wireframes, map integration, and GPS tracking.*
+
+---
+
 ## 📸 Screenshots
 
 *Coming soon! Stay tuned for visual previews of the app.*
@@ -72,7 +107,7 @@ Follow the journey and get the latest updates:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
+Contributions are welcome! Here’s how you can help:
 - 🐛 Report bugs and issues
 - 💡 Suggest new features
 - 📝 Improve documentation

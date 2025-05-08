@@ -45,25 +45,11 @@ The initial version of Maslul will include these core functionalities:
 
 ---
 
-## 🛠️ Project Structure
-
-The project follows a clean architecture layout to ensure scalability and maintainability:
-
-```
-Maslul/
-├── data/           # Data sources and repository implementations
-├── domain/         # Business logic and use cases
-├── ui/             # Composable screens and UI components
-└── README.md
-```
-
----
-
 ## 🧪 Getting Started
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/Maslul.git
+   git clone https://github.com/matanboas/Maslul.git
    ```
 
 2. **Open in Android Studio**:
@@ -76,20 +62,6 @@ Maslul/
 
 ---
 
-## 📅 Development Roadmap
-
-### Day 1: Project Setup & Planning (Completed)
-- Set up an Android Studio project with Jetpack Compose (Empty Activity)
-- Initialized Git and GitHub repository
-- Defined clean architecture structure (`data/`, `domain/`, `ui/`)
-- Outlined MVP features (see above)
-- Drafted a brief app specification (see above)
-- Marketing: Posted an intro on Twitter/LinkedIn with #AndroidDev #HikingApp
-
-*Next steps: UI wireframes, map integration, and GPS tracking.*
-
----
-
 ## 📸 Screenshots
 
 *Coming soon! Stay tuned for visual previews of the app.*
@@ -99,9 +71,8 @@ Maslul/
 ## 📢 Development Updates
 
 Follow the journey and get the latest updates:
-- [Twitter/X](https://twitter.com/yourprofile)
-- [LinkedIn](https://www.linkedin.com/in/yourprofile/)
-- [Facebook Group](https://www.facebook.com/groups/yourgroup)
+- [Twitter/X](https://x.com/MaslulHiking)
+- [LinkedIn](https://www.linkedin.com/in/matanboas/)
 
 ---
 
@@ -126,8 +97,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 - [Jetpack Compose](https://developer.android.com/jetpack/compose)
 - [Firebase](https://firebase.google.com/)
-- [MapLibre](https://maplibre.org/)
-- [OpenWeatherMap](https://openweathermap.org/)
+- [israelhiking](https://israelhiking.osm.org.il/)
+- [iNature](https://inature.info/)
 
 ---
 

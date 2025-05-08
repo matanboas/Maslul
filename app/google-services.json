@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "906492435932",
+    "project_id": "missing-iron-swords",
+    "storage_bucket": "missing-iron-swords.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906492435932:android:4ced1ce58ea751eabd4319",
+        "android_client_info": {
+          "package_name": "com.matanboas.maslul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906492435932-vv0l2ok8fd38p3j4kfcvefkv8ckamf8p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.matanboas.maslul",
+            "certificate_hash": "5ed3f5e19257b325e3c9856a9d9b2c9ce76b7105"
+          }
+        },
+        {
+          "client_id": "906492435932-vd5j2r7i9r5nr6hmj8dcttmf7rthdn56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD18giOSyRHdsccJ0I6L8NWyQJRh03wgZ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906492435932-vd5j2r7i9r5nr6hmj8dcttmf7rthdn56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
